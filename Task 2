@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  
+  <header>
+    <div class="logo">Abhijeet's Portfolio</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+   <section id="about">
+    <h1>Hi, I'm Abhijeet Parida 👋</h1>
+    <p>A passionate Full Stack Software Developer 🚀 with experience in building Web applications using JavaScript, React.js, Node.js, and React Native.</p>
+    <img src="C:\Users\abhij\OneDrive\Pictures\Camera Roll\IMG_4455.jpeg" alt="Profile Picture" class="profile-pic">
+  </section>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>HTML </li>
+      <li>CSS</li>
+    </ul>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <img src="C:\Users\abhij\OneDrive\Pictures\Screenshots\Screenshot 2024-10-28 202720.png" alt="Project-1">
+    <div class="project-card">
+      <h3>Project 1: Portfolio Website</h3>
+
+      <p>Fitness Portfolio </p>
+    </div>
+   </section>
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="Abhijeet_20Parida.pdf" download>Download My Resume</a>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: abhijeetparida82@gmail.com</p>
+    <p>Phone: +7978173885</p>
+    <div class="social-links">
+      <a href="https://github.com/Aparida2004">GitHub</a>
+      <a href="https://www.linkedin.com/in/abhijeet-parida-828285289/">LinkedIn</a>
+    </div>
+  </section>
+  <footer>
+    <p>© 2024 Abhijeet's Portfolio | All Rights Reserved.</p>
+  </footer>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+header nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+#about {
+  text-align: center;
+  padding: 50px;
+}
+
+#about h1 {
+  font-size: 2.5rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+#skills {
+  padding: 50px;
+  background-color: #e5e7eb;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+#projects {
+  padding: 20px;
+  width:auto;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#resume {
+  text-align: center;
+  padding: 50px;
+}
+
+#resume a {
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#resume a:hover {
+  background-color: #3730a3;
+}
+#contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 10px;
+  text-decoration: none;
+  color: #4f46e5;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+</style>
+</body>
+</html>
+
 
