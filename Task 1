@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landingpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <h1>LANDING PAGE</h1>
+      </div>
+      <nav class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact</a>
+        <button class="cta-button">Buy Now</button>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Creative Digital Agency</h2>
+      <p>We are passionate about helping businesses thrive with creative solutions.</p>
+      <button>Learn More</button>
+      <button>Request a Quote</button>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="feature-item">
+        <h3>Launch Business</h3>
+        <p>We help you take the industry by storm.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Online Support Team</h3>
+        <p>Get assistance from our dedicated support team.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Time Management</h3>
+        <p>We ensure efficiency to achieve your goals on time.</p>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container about-content">
+      <div class="text-content">
+        <h2>About Us</h2>
+        <p>15 years of passion for delivering better results for our clients</p>
+        <p> to understand their unique challenges and provide strategic insights and technology-driven services. 
+            From streamlining operations to enhancing customer engagement, 
+            we leverage the latest tools and methodologies to ensure measurable results. 
+            Our mission is to empower businesses of all sizes to adapt, evolve, and thrive in a fast-paced digital world.</p>
+            <button>Read More</button>
 
+      </div>
+      <div class="image-content">
+        <img src="C:\Users\abhij\OneDrive\Pictures\Camera Roll\aboutimg.jpeg" alt="Smiling professional">
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <div class="service-item">
+        <img src="C:\Users\abhij\OneDrive\Pictures\Camera Roll\userexperienceimg.jpeg"alt="User Experience">
+        <h4>User Experience</h4>
+      </div>
+      <div class="service-item">
+        <img src="C:\Users\abhij\OneDrive\Pictures\Camera Roll\creativedesign.jpeg" alt="Creative Design">
+        <h4>Creative Design</h4>
+      </div>
+      <div class="service-item">
+        <img src="C:\Users\abhij\OneDrive\Pictures\Camera Roll\retina.jpeg" alt="Retina Ready">
+        <h4>Retina Ready</h4>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <p>&copy; 2024 Creative Digital Agency. All rights reserved.</p>
+  </footer>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+  }
+  .main-header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .nav-menu a:hover {
+    background-color:#f46b45;
+  }
+  .cta-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .hero {
+    background-image: url('https://cdn.prod.website-files.com/65830f20095c31525532a93d/65830f20095c31525532aceb_63647d14d20f4c2cf779a362_14%2520Tips%2520On%2520How%2520To%2520Organize%2520Effective%2520Meetings.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+  }
+  
+  .hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .features {
+    background: linear-gradient(to right, #f46b45, #eea849);
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .feature-item {
+    width: 30%;
+  }
+  .about {
+    background-color: white;
+    padding: 50px 0;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-content .text-content {
+    width: 50%;
+  }
+  
+  .about-content .image-content img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .services {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .service-item {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .service-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  .main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  </style>
+</body>
+</html>
