@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>c
+  <meta harset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator-screen" id="screen"></div>
+    <div class="calculator-buttons">
+        <button class="btn" onclick="clearScreen()">C</button>
+        <button class="btn" onclick="appendToScreen('/')">/</button>
+        <button class="btn" onclick="appendToScreen('*')">*</button>
+        <button class="btn" onclick="backspace()">⌫</button>
+        <button class="btn" onclick="appendToScreen('7')">7</button>
+        <button class="btn" onclick="appendToScreen('8')">8</button>
+        <button class="btn" onclick="appendToScreen('9')">9</button>
+        <button class="btn" onclick="appendToScreen('-')">-</button>
+        <button class="btn" onclick="appendToScreen('4')">4</button>
+        <button class="btn" onclick="appendToScreen('5')">5</button>
+        <button class="btn" onclick="appendToScreen('6')">6</button>
+        <button class="btn" onclick="appendToScreen('+')">+</button>
+        <button class="btn" onclick="appendToScreen('1')">1</button>
+        <button class="btn" onclick="appendToScreen('2')">2</button>
+        <button class="btn" onclick="appendToScreen('3')">3</button>
+        <button class="btn equal-btn" onclick="calculateResult()">=</button>
+        <button class="btn" onclick="appendToScreen('0')">0</button>
+        <button class="btn" onclick="appendToScreen('.')">.</button>
+    </div>
+  </div>
+  <style>
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+.calculator {
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.calculator-screen {
+    background-color: #eaeaea;
+    border-bottom: 2px solid #333;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+.btn {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+    background-color: #dcdcdc;
+}
+
+.equal-btn {
+    grid-column: span 2;
+    background-color:blue;
+    color: white;
+}
+
+.equal-btn:hover {
+    background-color:lightskyblue;
+}
+  </style>
+  <script>
+ function clearScreen() {
+    document.getElementById('screen').innerText = '';
+}
+function appendToScreen(value) {
+    document.getElementById('screen').innerText += value;
+}
+function backspace() {
+    let screenContent = document.getElementById('screen').innerText;
+    document.getElementById('screen').innerText = screenContent.slice(0, -1);
+}
+function calculateResult() {
+    try {
+        let result = eval(document.getElementById('screen').innerText);
+        document.getElementById('screen').innerText = result;
+    } catch {
+        document.getElementById('screen').innerText = 'Error';
+    }
+}
+</script>
+</body>
+</html>
 
